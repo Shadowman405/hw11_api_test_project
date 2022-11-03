@@ -25,7 +25,7 @@ class NetworkManager {
                 return
             }
             print(data)
-        }
+        }.resume()
     }
     
 }
