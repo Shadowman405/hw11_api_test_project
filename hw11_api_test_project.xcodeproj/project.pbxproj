@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		BF80EDD729146CC1001DE532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80EDD629146CC1001DE532 /* AppDelegate.swift */; };
 		BF80EDD929146CC1001DE532 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80EDD829146CC1001DE532 /* SceneDelegate.swift */; };
-		BF80EDDB29146CC1001DE532 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80EDDA29146CC1001DE532 /* ViewController.swift */; };
 		BF80EDDE29146CC1001DE532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF80EDDC29146CC1001DE532 /* Main.storyboard */; };
 		BF80EDE029146CC3001DE532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF80EDDF29146CC3001DE532 /* Assets.xcassets */; };
 		BF80EDE329146CC3001DE532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF80EDE129146CC3001DE532 /* LaunchScreen.storyboard */; };
+		BF80EDED29147113001DE532 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80EDEC29147113001DE532 /* NetworkManager.swift */; };
+		BFD4983F2914786F00368E0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4983E2914786F00368E0A /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF80EDD329146CC1001DE532 /* hw11_api_test_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hw11_api_test_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF80EDD629146CC1001DE532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF80EDD829146CC1001DE532 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF80EDDA29146CC1001DE532 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF80EDDD29146CC1001DE532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF80EDDF29146CC3001DE532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF80EDE229146CC3001DE532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF80EDE429146CC3001DE532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF80EDEC29147113001DE532 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BFD4983E2914786F00368E0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				BF80EDD629146CC1001DE532 /* AppDelegate.swift */,
 				BF80EDD829146CC1001DE532 /* SceneDelegate.swift */,
-				BF80EDDA29146CC1001DE532 /* ViewController.swift */,
 				BF80EDDC29146CC1001DE532 /* Main.storyboard */,
 				BF80EDDF29146CC3001DE532 /* Assets.xcassets */,
 				BF80EDE129146CC3001DE532 /* LaunchScreen.storyboard */,
 				BF80EDE429146CC3001DE532 /* Info.plist */,
+				BF80EDEC29147113001DE532 /* NetworkManager.swift */,
+				BFD4983E2914786F00368E0A /* ViewController.swift */,
 			);
 			path = hw11_api_test_project;
 			sourceTree = "<group>";
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF80EDDB29146CC1001DE532 /* ViewController.swift in Sources */,
+				BF80EDED29147113001DE532 /* NetworkManager.swift in Sources */,
 				BF80EDD729146CC1001DE532 /* AppDelegate.swift in Sources */,
+				BFD4983F2914786F00368E0A /* ViewController.swift in Sources */,
 				BF80EDD929146CC1001DE532 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
