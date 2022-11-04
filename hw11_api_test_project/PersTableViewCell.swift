@@ -15,20 +15,16 @@ class PersTableViewCell: UITableViewCell {
     @IBOutlet weak var genderLbl: UILabel!
     
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    func configCell(with pers: PokedexElement) {
+        nameLbl.text = pers.name ?? "1"
+        genderLbl.text = pers.gender.rawValue ?? "1"
+        
+        guard let url = URL(string: pers.img ) else {return}
 
-        func configCell(with pers: PokedexElement) {
-            nameLbl.text = pers.name
-            genderLbl.text = pers.gender.rawValue
-            
-            guard let url = URL(string: pers.img ) else {return}
-
-            DispatchQueue.global().async {
-                guard let imageData = try? Data(contentsOf: url) else { return }
-                DispatchQueue.main.async {
-                    self.persImage.image = UIImage(data: imageData)
-                }
+        DispatchQueue.global().async {
+            guard let imageData = try? Data(contentsOf: url) else { return }
+            DispatchQueue.main.async {
+                self.persImage.image = UIImage(data: imageData)
             }
         }
     }

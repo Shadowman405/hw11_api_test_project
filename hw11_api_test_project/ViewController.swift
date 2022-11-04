@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private let manager = NetworkManager.shared
+    //private let manager = NetworkManager.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,14 @@ class ViewController: UIViewController {
     
     @IBAction func btnclicked(_ sender: Any) {
         print("clicked")
-        manager.getCards()
+        performSegue(withIdentifier: "toTable", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toTable" {
+            let persTVC = segue.destination as! PersTableViewController
+            persTVC.getPersons()
+        }
     }
 
 }
