@@ -25,6 +25,15 @@ class NetworkManager {
                 return
             }
             print(data)
+            
+            
+            do {
+                let decoder = JSONDecoder()
+                let pers = try decoder.decode([PokedexElement].self, from: data)
+                print(pers[0])
+            } catch let error {
+                print(error.localizedDescription)
+            }
         }.resume()
     }
     
@@ -33,5 +42,5 @@ class NetworkManager {
 
 struct API {
     
-    static let baseURL = "http://alpha-meme-maker.herokuapp.com/memes/12"
+    static let baseURL = "https://psychonauts-api.herokuapp.com/api/characters"
 }
