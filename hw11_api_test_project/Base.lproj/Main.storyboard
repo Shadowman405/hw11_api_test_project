@@ -16,13 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbw-iN-joh">
-                                <rect key="frame" x="158" y="405" width="75" height="35"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="psychonauts-1-button-1640852502327" translatesAutoresizingMaskIntoConstraints="NO" id="6bY-GN-Atc">
+                                <rect key="frame" x="0.0" y="0.0" width="408" height="867"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e86-X2-qfm">
+                                <rect key="frame" x="16" y="0.0" width="374" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CLICK ME">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="30"/>
+                                    <color key="baseForegroundColor" red="1" green="0.1794586601" blue="0.093378973510000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <action selector="btnclicked:" destination="836-VH-Xb6" eventType="touchUpInside" id="nkb-do-Saz"/>
+                                    <action selector="btnclicked:" destination="836-VH-Xb6" eventType="touchUpInside" id="OsK-KG-kO9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -176,6 +183,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="psychonauts-1-button-1640852502327" width="1024" height="1024"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
