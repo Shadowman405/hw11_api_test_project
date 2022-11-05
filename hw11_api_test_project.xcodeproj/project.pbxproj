@@ -16,6 +16,7 @@
 		BF82636729157C3E0074454A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF82636629157C3E0074454A /* Model.swift */; };
 		BF826369291580540074454A /* PersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF826368291580540074454A /* PersTableViewController.swift */; };
 		BF82636B291580630074454A /* PersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF82636A291580630074454A /* PersTableViewCell.swift */; };
+		BF82636D2917127F0074454A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF82636C2917127F0074454A /* DetailsViewController.swift */; };
 		BFD4983F2914786F00368E0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4983E2914786F00368E0A /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		BF82636629157C3E0074454A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		BF826368291580540074454A /* PersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersTableViewController.swift; sourceTree = "<group>"; };
 		BF82636A291580630074454A /* PersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersTableViewCell.swift; sourceTree = "<group>"; };
+		BF82636C2917127F0074454A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		BFD4983E2914786F00368E0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				BF82636629157C3E0074454A /* Model.swift */,
 				BF826368291580540074454A /* PersTableViewController.swift */,
 				BF82636A291580630074454A /* PersTableViewCell.swift */,
+				BF82636C2917127F0074454A /* DetailsViewController.swift */,
 			);
 			path = hw11_api_test_project;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				BF82636729157C3E0074454A /* Model.swift in Sources */,
 				BF82636B291580630074454A /* PersTableViewCell.swift in Sources */,
 				BF80EDED29147113001DE532 /* NetworkManager.swift in Sources */,
+				BF82636D2917127F0074454A /* DetailsViewController.swift in Sources */,
 				BF80EDD729146CC1001DE532 /* AppDelegate.swift in Sources */,
 				BFD4983F2914786F00368E0A /* ViewController.swift in Sources */,
 				BF80EDD929146CC1001DE532 /* SceneDelegate.swift in Sources */,
