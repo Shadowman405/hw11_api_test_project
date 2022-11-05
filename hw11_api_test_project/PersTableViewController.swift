@@ -10,12 +10,12 @@ import UIKit
 class PersTableViewController: UITableViewController {
     
     private var persons: [PokedexElement] = []
-    //private let manager = NetworkManager.shared
+    private let manager = NetworkManager.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        getPersons()
+        fetchPersons()
         tableView.rowHeight = 150
     }
 
@@ -61,5 +61,12 @@ extension PersTableViewController {
                 print(error.localizedDescription)
             }
         }.resume()
+    }
+    
+    func fetchPersons(){
+        manager.getCards { persons in
+            self.persons = persons
+            self.tableView.reloadData()
+        }
     }
 }

@@ -16,8 +16,8 @@ class PersTableViewCell: UITableViewCell {
     
     
     func configCell(with pers: PokedexElement) {
-        nameLbl.text = pers.name ?? "1"
-        genderLbl.text = pers.gender.rawValue ?? "1"
+        nameLbl.text = pers.name
+        genderLbl.text = pers.gender.rawValue
         
         guard let url = URL(string: pers.img ) else {return}
 
