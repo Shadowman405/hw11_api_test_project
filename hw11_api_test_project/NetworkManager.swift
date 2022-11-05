@@ -42,8 +42,6 @@ class NetworkManager {
     
 }
 
-
 struct API {
-    
     static let baseURL = "https://psychonauts-api.herokuapp.com/api/characters"
 }

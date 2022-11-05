@@ -9,7 +9,6 @@ import UIKit
 
 class PersTableViewCell: UITableViewCell {
     
-    
     @IBOutlet weak var persImage: UIImageView!
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var genderLbl: UILabel!

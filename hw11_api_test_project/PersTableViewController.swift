@@ -15,14 +15,12 @@ class PersTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        fetchPersons()
         tableView.rowHeight = 150
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return persons.count
     }
 
@@ -39,29 +37,29 @@ class PersTableViewController: UITableViewController {
 
 
 extension PersTableViewController {
-    func getPersons() {
-        let url = URL(string: "https://psychonauts-api.herokuapp.com/api/characters")!
-        
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "error")
-                return
-            }
-            print(data)
-            
-            
-            do {
-                let decoder = JSONDecoder()
-                self.persons = try decoder.decode([PokedexElement].self, from: data)
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-                print(self.persons.count)
-            } catch let error {
-                print(error.localizedDescription)
-            }
-        }.resume()
-    }
+//    func getPersons() {
+//        let url = URL(string: "https://psychonauts-api.herokuapp.com/api/characters")!
+//
+//        URLSession.shared.dataTask(with: url) { data, _, error in
+//            guard let data = data else {
+//                print(error?.localizedDescription ?? "error")
+//                return
+//            }
+//            print(data)
+//
+//
+//            do {
+//                let decoder = JSONDecoder()
+//                self.persons = try decoder.decode([PokedexElement].self, from: data)
+//                DispatchQueue.main.async {
+//                    self.tableView.reloadData()
+//                }
+//                print(self.persons.count)
+//            } catch let error {
+//                print(error.localizedDescription)
+//            }
+//        }.resume()
+//    }
     
     func fetchPersons(){
         manager.getCards { persons in

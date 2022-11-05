@@ -8,13 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    //private let manager = NetworkManager.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func btnclicked(_ sender: Any) {
@@ -25,7 +22,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toTable" {
             let persTVC = segue.destination as! PersTableViewController
-            persTVC.getPersons()
+            persTVC.fetchPersons()
         }
     }
 
