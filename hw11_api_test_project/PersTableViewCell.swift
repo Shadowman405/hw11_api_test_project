@@ -17,6 +17,7 @@ class PersTableViewCell: UITableViewCell {
     func configCell(with pers: PokedexElement) {
         nameLbl.text = pers.name
         genderLbl.text = pers.gender.rawValue
+        persImage.layer.cornerRadius = 40
         
         guard let url = URL(string: pers.img ) else {return}
 

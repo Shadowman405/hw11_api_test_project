@@ -33,6 +33,19 @@ class PersTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedPers = persons[indexPath.row]
+        performSegue(withIdentifier: "toDetails", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetails" {
+            let persDVC = segue.destination as! DetailsViewController
+            let selectedRow = tableView.indexPathForSelectedRow!.row
+            persDVC.pers = persons[selectedRow]
+            //persDVC.configView()
+        }
+    }
 }
 
 

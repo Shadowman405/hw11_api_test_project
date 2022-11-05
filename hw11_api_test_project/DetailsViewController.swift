@@ -10,7 +10,6 @@ import UIKit
 class DetailsViewController: UIViewController {
     
     @IBOutlet weak var persImage: UIImageView!
-    @IBOutlet weak var persNameLbl: UILabel!
     @IBOutlet weak var persGenderLbl: UILabel!
     
     @IBOutlet weak var psipowerImg: UIImageView!
@@ -25,14 +24,16 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
         
         configView()
+        psipowerImg.layer.cornerRadius = 40
+        
     }
     
     func configView() {
         guard let person = pers else { return }
         guard let urlPers = URL(string: person.img) else {return}
         guard let urlPsi = URL(string: person.psiPowers[0].img) else {return}
-        persNameLbl.text = person.name
-        persGenderLbl.text = person.gender.rawValue
+        self.title = String(person.name).uppercased()
+        persGenderLbl.text = "Gender: " + person.gender.rawValue
         psiNameLbl.text = person.psiPowers[0].name
         psiDescrLbl.text = person.psiPowers[0].psiPowerDescription
         
