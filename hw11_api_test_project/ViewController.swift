@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toTable" {
             let persTVC = segue.destination as! PersTableViewController
-            persTVC.fetchPersons()
+            //persTVC.fetchPersons()
             persTVC.fetchPersonsAF()
         }
     }

@@ -16,6 +16,7 @@ class PersTableViewController: UITableViewController {
         super.viewDidLoad()
 
         tableView.rowHeight = 150
+        print(persons)
     }
 
     // MARK: - Table view data source
@@ -73,15 +74,19 @@ extension PersTableViewController {
 //            }
 //        }.resume()
 //    }
-    
-    func fetchPersons(){
-        manager.getPerons { persons in
-            self.persons = persons
-            self.tableView.reloadData()
-        }
-    }
+//
+//    func fetchPersons(){
+//        manager.getPerons { persons in
+//            self.persons = persons
+//            self.tableView.reloadData()
+//        }
+//    }
     
     func fetchPersonsAF() {
-        manager.getPersonsAF()
+        manager.getPersonsAF { persons in
+            self.persons = persons
+            self.tableView.reloadData()
+            print(self.persons)
+        }
     }
 }

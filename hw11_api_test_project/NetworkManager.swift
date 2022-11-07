@@ -40,13 +40,25 @@ class NetworkManager {
         }.resume()
     }
     
-    func getPersonsAF() {
+    func getPersonsAF(with completion: @escaping ([PokedexElement]) -> ()) {
         let url = self.baseURL
+        var persons = [PokedexElement]()
         
         AF.request(url, method: .get).validate().responseJSON { dataResponse in
             switch dataResponse.result {
             case .success(let value):
-                print(value)
+                guard let persData = value as? [[String: Any]] else {return}
+                
+                for persData in persData {
+                    
+                    let pers = PokedexElement(persData: persData)
+                    persons.append(pers)
+                }
+                
+                DispatchQueue.main.async {
+                    completion(persons)
+                }
+                
             case .failure(let error):
                 print(error.localizedDescription)
             }
