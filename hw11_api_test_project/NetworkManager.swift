@@ -43,8 +43,13 @@ class NetworkManager {
     func getPersonsAF() {
         let url = self.baseURL
         
-        AF.request(url).responseJSON { dataResponse in
-            print(dataResponse)
+        AF.request(url, method: .get).validate().responseJSON { dataResponse in
+            switch dataResponse.result {
+            case .success(let value):
+                print(value)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
         }
         
     }

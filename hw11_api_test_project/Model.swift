@@ -20,6 +20,15 @@ struct PokedexElement: Codable {
         case name, psiPowers
         case v = "__v"
     }
+    
+    init(persData: [String: Any]) {
+        name = persData["name"] as? String ?? ""
+        gender = persData["gender"] as? Gender ?? Gender.male
+        img = persData["img"] as? String ?? ""
+        psiPowers = persData["psiPowers"] as? [PsiPower] ?? [PsiPower(psiPowerDescription: "", img: "", id: "", name: "")]
+        v = persData["v"] as? Int ?? 0
+        id = persData["id"] as? String ?? ""
+    }
 }
 
 enum Gender: String, Codable {
