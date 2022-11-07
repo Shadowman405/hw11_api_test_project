@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E8844D861E944E757F514E3 /* Pods_hw11_api_test_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF64ED2409810719C83FD89 /* Pods_hw11_api_test_project.framework */; };
 		BF80EDD729146CC1001DE532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80EDD629146CC1001DE532 /* AppDelegate.swift */; };
 		BF80EDD929146CC1001DE532 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF80EDD829146CC1001DE532 /* SceneDelegate.swift */; };
 		BF80EDDE29146CC1001DE532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF80EDDC29146CC1001DE532 /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FF64ED2409810719C83FD89 /* Pods_hw11_api_test_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hw11_api_test_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E9A3A38E6C74F5F23AD2BF6 /* Pods-hw11_api_test_project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hw11_api_test_project.release.xcconfig"; path = "Target Support Files/Pods-hw11_api_test_project/Pods-hw11_api_test_project.release.xcconfig"; sourceTree = "<group>"; };
 		BF80EDD329146CC1001DE532 /* hw11_api_test_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hw11_api_test_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF80EDD629146CC1001DE532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF80EDD829146CC1001DE532 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		BF82636A291580630074454A /* PersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersTableViewCell.swift; sourceTree = "<group>"; };
 		BF82636C2917127F0074454A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		BFD4983E2914786F00368E0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9D1261C09C665D240247EB1 /* Pods-hw11_api_test_project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hw11_api_test_project.debug.xcconfig"; path = "Target Support Files/Pods-hw11_api_test_project/Pods-hw11_api_test_project.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E8844D861E944E757F514E3 /* Pods_hw11_api_test_project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43D29EE3D5FF248A4B9DC47E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FF64ED2409810719C83FD89 /* Pods_hw11_api_test_project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F6AB2D23CAE7E0665C90350 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9D1261C09C665D240247EB1 /* Pods-hw11_api_test_project.debug.xcconfig */,
+				7E9A3A38E6C74F5F23AD2BF6 /* Pods-hw11_api_test_project.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BF80EDCA29146CC1001DE532 = {
 			isa = PBXGroup;
 			children = (
 				BF80EDD529146CC1001DE532 /* hw11_api_test_project */,
 				BF80EDD429146CC1001DE532 /* Products */,
+				9F6AB2D23CAE7E0665C90350 /* Pods */,
+				43D29EE3D5FF248A4B9DC47E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF80EDE729146CC3001DE532 /* Build configuration list for PBXNativeTarget "hw11_api_test_project" */;
 			buildPhases = (
+				6C338E4ABAAABB377223E200 /* [CP] Check Pods Manifest.lock */,
 				BF80EDCF29146CC1001DE532 /* Sources */,
 				BF80EDD029146CC1001DE532 /* Frameworks */,
 				BF80EDD129146CC1001DE532 /* Resources */,
+				83DAB4320B2AB4EFA07A0FEC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,6 +174,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C338E4ABAAABB377223E200 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hw11_api_test_project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83DAB4320B2AB4EFA07A0FEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hw11_api_test_project/Pods-hw11_api_test_project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hw11_api_test_project/Pods-hw11_api_test_project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hw11_api_test_project/Pods-hw11_api_test_project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF80EDCF29146CC1001DE532 /* Sources */ = {
@@ -302,6 +371,7 @@
 		};
 		BF80EDE829146CC3001DE532 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D1261C09C665D240247EB1 /* Pods-hw11_api_test_project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,6 +400,7 @@
 		};
 		BF80EDE929146CC3001DE532 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E9A3A38E6C74F5F23AD2BF6 /* Pods-hw11_api_test_project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

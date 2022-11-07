@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import Alamofire
 
 class NetworkManager {
     static let shared = NetworkManager(baseURL: URL(string:API.baseURL)!)
