@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         if segue.identifier == "toTable" {
             let persTVC = segue.destination as! PersTableViewController
             persTVC.fetchPersons()
+            persTVC.fetchPersonsAF()
         }
     }
 

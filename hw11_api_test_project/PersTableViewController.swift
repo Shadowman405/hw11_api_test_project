@@ -34,7 +34,7 @@ class PersTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedPers = persons[indexPath.row]
+        _ = persons[indexPath.row]
         performSegue(withIdentifier: "toDetails", sender: self)
     }
     
@@ -75,9 +75,13 @@ extension PersTableViewController {
 //    }
     
     func fetchPersons(){
-        manager.getCards { persons in
+        manager.getPerons { persons in
             self.persons = persons
             self.tableView.reloadData()
         }
+    }
+    
+    func fetchPersonsAF() {
+        manager.getPersonsAF()
     }
 }

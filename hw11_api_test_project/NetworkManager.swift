@@ -17,7 +17,7 @@ class NetworkManager {
         self.baseURL = baseURL
     }
     
-    func getCards(with completion: @escaping ([PokedexElement]) -> ()) {
+    func getPerons(with completion: @escaping ([PokedexElement]) -> ()) {
         let url = self.baseURL
         
         URLSession.shared.dataTask(with: url) { data, _, error in
@@ -38,6 +38,15 @@ class NetworkManager {
                 print(error.localizedDescription)
             }
         }.resume()
+    }
+    
+    func getPersonsAF() {
+        let url = self.baseURL
+        
+        AF.request(url).responseJSON { dataResponse in
+            print(dataResponse)
+        }
+        
     }
     
 }
